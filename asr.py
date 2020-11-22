@@ -29,7 +29,7 @@ def extract_label(file_name: str) -> str:
 
 
 def get_test_files() -> [str]:
-    test_files = []
+    test_files: List[str] = []
     for gender_dir_name in os.listdir(TEST_DIR):
         # MAN, WOMAN
         gender_dir = os.path.join(TEST_DIR, gender_dir_name)
